@@ -15,7 +15,7 @@ node {
     stage('Run image') {
         docker.image('srv-web-marc').withRun('--name srv_web-marc' ) { c ->
 
-        sh 'docker ps | grep srv_web-ano'
+        sh 'docker ps | grep srv_web-marc'
 	}
 
     }
